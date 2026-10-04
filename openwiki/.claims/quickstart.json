@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1280637bdf979f4effe199e96546baed48d497341b5d15d68a48037ef650d016",
+  "claims": [
+    {
+      "id": "claim_aba5e3289f03404e93ee198dfe954460",
+      "statement": "The library provides a collection of spreadsheet-style financial functions implemented to support NumPy broadcasting and both float and Decimal types.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/_financial.py",
+          "version": "repo-file-v1:sha256:090c6bc3d463abf1310ecbf73b55bef76201fe941e71ceee9e404900c6042684"
+        }
+      ]
+    },
+    {
+      "id": "claim_790b749914ef434e90c4ec67959b5708",
+      "statement": "Public financial functions include fv, pmt, nper, ipmt, ppmt, pv, rate, irr, npv, and mirr, with dedicated exceptions for numerical errors.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/_financial.py#L24-L26",
+          "version": "repo-lines-v1:sha256:550da9f430e332a6a0cc17bae6459e18bbba01e77846fb0ff2c98cf4130c8c79:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWIxMGMzOGYyODA4MWRjZmMzYTFhZDNkMTZhYWEyOWM5MWFhZGM3MzBlMTVjNWM0ZmFhYTE1NTcxZjJlODAwNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGI2YjNmYzExNzJjNDUwZjZiMTNkNjJkZjdhZjI5NjYwZGJiMmNjZjk1ODhkOTQ4YjlkYjM4NDM3NzA5NjNkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmE3OGYxNjljOThjNzFjODQzYzI5NDhjNGEyN2RlY2M5MGYxYzI5YzlmN2JmN2I5OTgwOWE2YTljMDRhZGY1YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTZjNTA3YWVmNjYzMWViZDZlYTA5Yjc1YWEyMTlhZTkwYzQ1NTYyNTg5NGRmMDYyODg5NmFiNzcyOWZjMDU4NiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_77495d25c18f4efe808ac0f934c74bf8",
+      "statement": "The library defines custom exceptions NoRealSolutionError and IterationsExceededError for specific numerical failures.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/_financial.py#L91-L97",
+          "version": "repo-lines-v1:sha256:6542e6c68af9b62adcd0e370d49f2a49098d58cef5762c6dcbe8eec9f7d0f56b:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNWE1ZGY0YzAzZGM2ZDJlMzUxMTZhNjdmYTE0ZWI1ZTk5MzVhYjFmZGI3ZmRhOTg2YzE5NjE0MDcwOTA0MzhkOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDlmOTMwODNjMTk3MTIxYjk4MjcwMGJhOGFmYWJkMTcyMmNmMWQzZTc0MDQ1MDllODBlZmEyNzI0N2Y2MmYwNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTc2MDcwNzQ0ZmQyNmJmYjc3YWQ2ZjcwNWQ0YjZkYTg3OTQ5NTU0MDhhZDg1Yjk3MDAwZTUwMDY0YWFhZGU5OCJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.0",
+    "at": "2026-10-04T09:49:17.521Z"
+  }
+}

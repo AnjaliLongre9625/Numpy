@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:8940c6c7282479c4ec76d3531465b489d2d4d68aba3ea3c24e1d6406112c6fed",
+  "pageVersion": "sha256:61b3bf4008031b2689647a03fa323265ace24d1131e4a2da86a2ea04032daae9",
   "claims": [
     {
       "id": "claim_82dfbaaa09844bad9ee3fa2c3644deef",
@@ -8,7 +8,7 @@
       "evidence": [
         {
           "resource": "repo://README.md",
-          "version": "repo-file-v1:sha256:500daf294f9b602ea52c4351746a80bba686959915ac8e082d6e1526c6ee8bc3"
+          "version": "repo-file-v1:sha256:f58d7508faf597a163be5398b345a24ea3dba828e10de48394ad8826e58eceff"
         }
       ]
     },
@@ -18,7 +18,7 @@
       "evidence": [
         {
           "resource": "repo://README.md",
-          "version": "repo-file-v1:sha256:500daf294f9b602ea52c4351746a80bba686959915ac8e082d6e1526c6ee8bc3"
+          "version": "repo-file-v1:sha256:f58d7508faf597a163be5398b345a24ea3dba828e10de48394ad8826e58eceff"
         }
       ]
     },
@@ -28,13 +28,13 @@
       "evidence": [
         {
           "resource": "repo://README.md",
-          "version": "repo-file-v1:sha256:500daf294f9b602ea52c4351746a80bba686959915ac8e082d6e1526c6ee8bc3"
+          "version": "repo-file-v1:sha256:f58d7508faf597a163be5398b345a24ea3dba828e10de48394ad8826e58eceff"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.7.0",
-    "at": "2026-10-04T09:15:48.692Z"
+    "at": "2026-10-04T09:49:17.521Z"
   }
 }
