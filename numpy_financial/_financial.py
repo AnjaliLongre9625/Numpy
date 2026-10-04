@@ -379,13 +379,22 @@ def pmt(rate, nper, pv, fv: Any = 0, when: _When = 'end'):
 
     """
     when = _convert_when(when)
-    (rate, nper, pv, fv, when) = map(np.array, [rate, nper, pv, fv, when])
+    rate, nper, pv, fv, when = np.broadcast_arrays(rate, nper, pv, fv, when)
+
     temp = (1 + rate) ** nper
-    mask = (rate == 0)
+    mask = rate == 0
     masked_rate = np.where(mask, 1, rate)
-    fact = np.where(mask != 0, nper,
-                    (1 + masked_rate * when) * (temp - 1) / masked_rate)
-    return -(fv + pv * temp) / fact
+    fact = np.where(
+        mask,
+        nper,
+        (1 + masked_rate * when) * (temp - 1) / masked_rate,
+    )
+    out = -(fv + pv * temp) / fact
+    return _ufunc_like(out)
+
+def simple_interest(principal, rate, periods):
+    """Return simple interest: principal * rate * periods."""
+    return principal * rate * periods
 
 @overload
 def nper(
