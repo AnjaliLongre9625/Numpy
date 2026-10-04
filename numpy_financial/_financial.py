@@ -393,7 +393,7 @@ def pmt(rate, nper, pv, fv: Any = 0, when: _When = 'end'):
     return _ufunc_like(out)
 
 def simple_interest(principal, rate, periods):
-    """Return simple interest: principal * rate * periods."""
+    """Calculate simple interest for a given principal, rate, and number of periods."""
     return principal * rate * periods
 
 @overload
