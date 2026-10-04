@@ -3,9 +3,6 @@ type: architecture
 title: Implementation Details
 description: Overview of the internal mechanisms for financial calculations, including hybrid Python-Cython architecture and handling of number types.
 tags: [architecture, numpy, cython, financial, internals]
-verified:
-  - by: openwiki/0.7.0
-    at: 2026-10-04T09:15:48.692Z
 sources:
   - id: openwiki-source-4e5f802aed16234a2248d448
     resource: repo://numpy_financial/_cfinancial.pyx

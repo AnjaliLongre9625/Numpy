@@ -3,9 +3,6 @@ type: concept
 title: Financial Functions API
 description: Core reference for the mathematical and functional API of numpy-financial, covering cash flow, interest rate, and investment analysis.
 tags: [financial, numpy-financial, mathematics]
-verified:
-  - by: openwiki/0.7.0
-    at: 2026-10-04T09:15:48.692Z
 sources:
   - id: openwiki-source-23775c3de52f3ab95a13cb8b
     resource: repo://README.md
