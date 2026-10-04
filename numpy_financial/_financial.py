@@ -101,6 +101,9 @@ def _get_output_array_shape(*arrays: npt.NDArray[Any]) -> tuple[int, ...]:
 
 
 def _ufunc_like(array: np.generic | npt.NDArray[Any]) -> Any:
+    if isinstance(array, Decimal):
+        return array
+
     try:
         # If size of array is one, return scalar
         return array.item()
