@@ -3,9 +3,6 @@ type: concept
 title: Testing Strategy
 description: An overview of the testing infrastructure and methodologies used to verify financial function correctness in the numpy-financial repository.
 tags: [testing, quality assurance, financial]
-verified:
-  - by: openwiki/0.7.0
-    at: 2026-10-04T09:49:17.521Z
 sources:
   - id: openwiki-source-2c0fd432d4064fa2c8662e2a
     resource: repo://numpy_financial/tests/test_financial.py
