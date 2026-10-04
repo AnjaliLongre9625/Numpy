@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:cac41d2abab7f443665e113687507fdd89ac496d7999c3ddda950e02c2c11917",
+  "claims": [
+    {
+      "id": "claim_98bda85710c84d60ba891cb84d3ed16c",
+      "statement": "The numpy_financial package uses a hybrid architecture with a Python layer for input management and broadcasting, and a Cython layer for performance-critical numerical loops.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/_financial.py",
+          "version": "repo-file-v1:sha256:254d156372f04706e732845df54e69ffdb1566853238ca8619b4acaa8659777c"
+        }
+      ]
+    },
+    {
+      "id": "claim_2eaea6cdf99c423796f2a088834537ab",
+      "statement": "Financial functions act similarly to NumPy ufuncs by supporting broadcasting, allowing them to accept combinations of scalar and array-like inputs.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/_financial.py#L5-L12",
+          "version": "repo-lines-v1:sha256:c8bcc00b81d2ec95eeebf62a50d44e4282c73d04902042e1f31ee88e0574b466:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzVhZTk1NjI3NjI1MWIyMmVjNmRlMjA1NTlmNTJjNTUxYjg0MTZmNzMyOGM5MGZhMjU1NDNhOTVlNDgxNjNlNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDc1ZDQ1ODllOTFjYzhjYjk3NDg4OWRhYjAxZGUxNWRiMTU3NGNhMTBlZWM3MjkwYTEwOWJmNTg4Yzk0ZTAxYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmYyMzc2NjYyY2I1ODEzYjU3NzA3MzVlNDMzNTFiMTU5NTFmZmRlNGM5YmZlZmVkM2IxMTMwZTUwNWRkMGI2MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmM2YTM1MzIxMDVhNTk2NzkzNDZkYWU5OWNmNTkyYjljNjgwODIxZGRhOTM5NDkxNmRjNWYzNTMwNTc5YTMyMCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_3b4c255c312d4bdd90b0ce6bf8ceec90",
+      "statement": "The package supports the decimal.Decimal type in its functions unless stated otherwise.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/_financial.py#L10-L11",
+          "version": "repo-lines-v1:sha256:b7c07abd3d8b0a1ec54ecabb2aedcbcf7b74f557035e4c14bba5d556f2199c8b:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiY2RlMDVjYTQyOGI3NGYyMDlhYmQ3ZTZjYTljMjEwOTMyZmVhMmJiYmRiNzIzMDIxMWNkZWNkYzIzNmQ1NGFmYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzMwYTk4Mzc2ZDg2NGQxMWQ0ZDIxYWYyNjNhYTA1NWI1MzNlNDVlNDVhYTNkMmJkNDNiNTcwZDc0NmExYzdkNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTVjODc5YzBjN2JmODkwN2FkMGUwOGNiZmM0ZDg0ODY1NjMyOGJlZmFiNTQ5M2FlOGU5ZGFjODdhNzliNjlkOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTdlYTMyNDMyNTNiMDlkYTdhOGFjMmQ2MzVlMTY1ZGVkZTA2YzFlZmE4MWIxM2E2NDk2OTE3Mzk0MmQ3YmM0ZCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_384966b2f9e14783904d3127f5396772",
+      "statement": "The _cfinancial.pyx module contains high-performance, C-level implementations of algorithms such as npv and nper, minimizing Python loop overhead.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/_cfinancial.pyx",
+          "version": "repo-file-v1:sha256:880ed320a3d5d1be880b65842e0543a0f5951bed28158558611101e989b4cad0"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.0",
+    "at": "2026-10-04T09:15:48.692Z"
+  }
+}

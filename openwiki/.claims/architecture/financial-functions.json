@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:8940c6c7282479c4ec76d3531465b489d2d4d68aba3ea3c24e1d6406112c6fed",
+  "claims": [
+    {
+      "id": "claim_82dfbaaa09844bad9ee3fa2c3644deef",
+      "statement": "The numpy-financial library provides a core set of financial functions, including fv, pv, pmt, nper, rate, ipmt, ppmt, npv, irr, and mirr, designed for financial analysis.",
+      "evidence": [
+        {
+          "resource": "repo://README.md",
+          "version": "repo-file-v1:sha256:500daf294f9b602ea52c4351746a80bba686959915ac8e082d6e1526c6ee8bc3"
+        }
+      ]
+    },
+    {
+      "id": "claim_615ff316109e41278732408449e5bd09",
+      "statement": "numpy-financial functions support scalar, array, and decimal.Decimal inputs, enabling high-precision and vectorized calculations.",
+      "evidence": [
+        {
+          "resource": "repo://README.md",
+          "version": "repo-file-v1:sha256:500daf294f9b602ea52c4351746a80bba686959915ac8e082d6e1526c6ee8bc3"
+        }
+      ]
+    },
+    {
+      "id": "claim_a079802048bd4bdb881702aa5c1d8310",
+      "statement": "Financial functions in numpy-financial utilize NumPy broadcasting to perform vectorized computations across arrays of inputs.",
+      "evidence": [
+        {
+          "resource": "repo://README.md",
+          "version": "repo-file-v1:sha256:500daf294f9b602ea52c4351746a80bba686959915ac8e082d6e1526c6ee8bc3"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.0",
+    "at": "2026-10-04T09:15:48.692Z"
+  }
+}

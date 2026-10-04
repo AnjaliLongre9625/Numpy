@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture/financial-functions.md": {
+      "pageVersion": "sha256:8940c6c7282479c4ec76d3531465b489d2d4d68aba3ea3c24e1d6406112c6fed",
+      "completedBy": "openwiki/0.7.0",
+      "completedRunId": "e9da78e6-e030-4646-9919-6aaaebead49a",
+      "gitHead": "233c6cf594849708d3320c5a31d69eadb857aafe",
+      "sourceFingerprint": "sha256:f4ee214b66f4780d8c606024594e32aab5076e64f178e48c4017b5e38ee0d6a8"
+    },
+    "/openwiki/architecture/implementation-details.md": {
+      "pageVersion": "sha256:cac41d2abab7f443665e113687507fdd89ac496d7999c3ddda950e02c2c11917",
+      "completedBy": "openwiki/0.7.0",
+      "completedRunId": "e9da78e6-e030-4646-9919-6aaaebead49a",
+      "gitHead": "233c6cf594849708d3320c5a31d69eadb857aafe",
+      "sourceFingerprint": "sha256:f4ee214b66f4780d8c606024594e32aab5076e64f178e48c4017b5e38ee0d6a8"
+    }
+  }
+}
