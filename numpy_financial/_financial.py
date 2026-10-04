@@ -101,6 +101,9 @@ def _get_output_array_shape(*arrays: npt.NDArray[Any]) -> tuple[int, ...]:
 
 
 def _ufunc_like(array: np.generic | npt.NDArray[Any]) -> Any:
+    if isinstance(array, Decimal):
+        return array
+
     try:
         # If size of array is one, return scalar
         return array.item()
@@ -371,7 +374,7 @@ def pmt(rate, nper, pv, fv: Any = 0, when: _When = 'end'):
     years at an annual interest rate of 7.5%?
 
     >>> npf.pmt(0.075/12, 12*15, 200000)
-    np.float64(-1854.0247200054619)
+    -1854.0247200054619
 
     In order to pay-off (i.e., have a future-value of 0) the $200,000 obtained
     today, a monthly payment of $1,854.02 would be required.  Note that this
