@@ -1,40 +1,56 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:8e8d957443d8d0a4ee5e795ed69959fbd728a7fe611accff11d4c0af313a0eb7",
+  "pageVersion": "sha256:3d7f0a4ca25056f40262401b84ceac1cf0fe2412dd29ba2cb319d9421e1a8197",
   "claims": [
     {
       "id": "claim_82dfbaaa09844bad9ee3fa2c3644deef",
-      "statement": "The numpy-financial library provides a core set of financial functions, including fv, pv, pmt, nper, rate, ipmt, ppmt, npv, irr, mirr, and simple_interest, designed for financial analysis.",
+      "statement": "The numpy-financial library provides a core set of financial functions, including fv, pv, pmt, nper, rate, ipmt, ppmt, npv, irr, mirr, and simple_interest, patterned after standard spreadsheet financial formulas.",
       "evidence": [
         {
           "resource": "repo://numpy_financial/_financial.py",
-          "version": "repo-file-v1:sha256:c1f26e63573fca9b2390180aeea1c39ddc91497f38da0432348e39205aff8321"
+          "version": "repo-file-v1:sha256:48f589db1cab37ecdc7d492fd51340c2808254bd841b037cd3c598817f7d8ab3"
         }
       ]
     },
     {
       "id": "claim_615ff316109e41278732408449e5bd09",
-      "statement": "numpy-financial functions support scalar, array, and decimal.Decimal inputs, enabling high-precision and vectorized calculations via NumPy broadcasting.",
+      "statement": "numpy-financial functions support scalar, array, and decimal.Decimal inputs, enabling high-precision calculations and leveraging NumPy broadcasting for vectorized operations.",
       "evidence": [
         {
-          "resource": "repo://numpy_financial/_financial.py",
-          "version": "repo-file-v1:sha256:c1f26e63573fca9b2390180aeea1c39ddc91497f38da0432348e39205aff8321"
+          "resource": "repo://numpy_financial/_financial.py#L10-L11",
+          "version": "repo-lines-v1:sha256:b7c07abd3d8b0a1ec54ecabb2aedcbcf7b74f557035e4c14bba5d556f2199c8b:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiY2RlMDVjYTQyOGI3NGYyMDlhYmQ3ZTZjYTljMjEwOTMyZmVhMmJiYmRiNzIzMDIxMWNkZWNkYzIzNmQ1NGFmYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzMwYTk4Mzc2ZDg2NGQxMWQ0ZDIxYWYyNjNhYTA1NWI1MzNlNDVlNDVhYTNkMmJkNDNiNTcwZDc0NmExYzdkNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTVjODc5YzBjN2JmODkwN2FkMGUwOGNiZmM0ZDg0ODY1NjMyOGJlZmFiNTQ5M2FlOGU5ZGFjODdhNzliNjlkOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMTdlYTMyNDMyNTNiMDlkYTdhOGFjMmQ2MzVlMTY1ZGVkZTA2YzFlZmE4MWIxM2E2NDk2OTE3Mzk0MmQ3YmM0ZCJ9"
+        },
+        {
+          "resource": "repo://numpy_financial/_financial.py#L140-L145",
+          "version": "repo-lines-v1:sha256:5030bdb2f99982b1c76e9dfffa521f0717248d126dd65064b023e0acec3653ba:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiY2Y1MDNhMzdhZDcyZTQ4MTQzYzFiNGYzOWZiMTBhMDU0OTZhOTQ1N2U4MzI2NmUyYjNmNjgyMGUyNmJiODUzYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjgzYWQyNmMxNGVlODY3NzdmMWExMzAxODZlMmZjNzQzM2ZlMmEwOTdlMzE0OTAxMzg1NjFlNmRjOGViNGY3YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTI0ODkyNWQ3Yjc2YTIzOGE0Nzk1MjJlMDNlNzFjOWMzMTk2NWMwOTgxNTc4NGE4OTY1YmJkMzNkNzliMGNmNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzA1NmRiOTE5Y2M3NzlmYjUxOGFlZTk1ZjdhYmQ0NTgzNDhlYmEyNDRkZTJlYzVlYmNhNzJjNTE0OGM2OTVhZiJ9"
+        },
+        {
+          "resource": "repo://numpy_financial/_financial.py#L246-L246",
+          "version": "repo-lines-v1:sha256:3a5c3e309493e5bf61c016dbd2e5d7d0373d74039383db21aed094a813ee1780:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiM2E1YzNlMzA5NDkzZTViZjYxYzAxNmRiZDJlNWQ3ZDAzNzNkNzQwMzkzODNkYjIxYWVkMDk0YTgxM2VlMTc4MCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiM2E1YzNlMzA5NDkzZTViZjYxYzAxNmRiZDJlNWQ3ZDAzNzNkNzQwMzkzODNkYjIxYWVkMDk0YTgxM2VlMTc4MCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiY2Y2YTBkM2U1YmM2N2Y1YTQ4ZmFkZmE0ZmE0YTIxYWJiNzM0NzFmYjE5YzVmOWQxODNjYTE1ZmRkNDYwMGYwYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTA1NGQ1Y2ZiMzhlZTk0MjgzNTZhZmRjMmE1NWZhOTYyZDFlYzYxY2Q4ZjY3Yzg1Y2Y5OWVhZTA5OTMxYTY2MSJ9"
+        },
+        {
+          "resource": "repo://numpy_financial/_financial.py#L32-L35",
+          "version": "repo-lines-v1:sha256:fc0e1891ad927748a286ad16c1babafd42167348999fa4f047febb26bac26fc2:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGI1M2Q1OGE0M2ZhOGE0MmVjMDRhMTc0NTc4ZDZjM2VmYjgyNDcyNzM2NTk0OWQ4Yjk1NmVkNzY0ZDNlOTM5OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiY2YxYzQxYzY3NDU0NGJhMzdkYmEzNDVhNzY1MjliMDc3OWNhNzljNGYzZWY1YzM2MDM1NDAxZWQ1MjBiM2YxNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMjdkMzBhOGZjODc2NTBhMzM1OTRiMzUxYzNmYzlhMmMyZTY1NTY0ZTc1OGFkZjA5MjVjODdjYmUwYzczYzg0YyJ9"
         }
       ]
     },
     {
       "id": "claim_a079802048bd4bdb881702aa5c1d8310",
-      "statement": "Financial functions in numpy-financial are designed to behave like NumPy ufuncs, leveraging broadcasting to perform vectorized computations across compatible input shapes, often delegating core numerical computations to internal C-extensions (e.g., _cfinancial).",
+      "statement": "Financial functions in numpy-financial are designed to behave like NumPy ufuncs, leveraging broadcasting to perform vectorized computations across compatible input shapes, and delegating heavy numerical computations to internal C-extensions (e.g., _cfinancial).",
       "evidence": [
         {
-          "resource": "repo://numpy_financial/_financial.py",
-          "version": "repo-file-v1:sha256:c1f26e63573fca9b2390180aeea1c39ddc91497f38da0432348e39205aff8321"
+          "resource": "repo://numpy_financial/_financial.py#L495-L495",
+          "version": "repo-lines-v1:sha256:d4f63387ee748154ab98607e9cabf4de551700b7f59885a758a02f87f6963617:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZDRmNjMzODdlZTc0ODE1NGFiOTg2MDdlOWNhYmY0ZGU1NTE3MDBiN2Y1OTg4NWE3NThhMDJmODdmNjk2MzYxNyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDRmNjMzODdlZTc0ODE1NGFiOTg2MDdlOWNhYmY0ZGU1NTE3MDBiN2Y1OTg4NWE3NThhMDJmODdmNjk2MzYxNyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTdhMGU0ZTkyMGVlNzIwZGVkZDI5ODk0ZTRkMWU5OTJiYzFiYmEyYmFhZjZkYjJjY2U3NzZkMTY0MjI3ODgyZiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMmY1NzRlNWEwYWJiMGFmM2JhOTdmYjYzNjExNGQ0NjdjZjBhMGFkY2ZmNmQ5ZWI1ODExMmNjNmJiZGMxYTZmYSJ9"
+        },
+        {
+          "resource": "repo://numpy_financial/_financial.py#L6-L8",
+          "version": "repo-lines-v1:sha256:548ad09bc1ae4da273ed724fd83c03667b0e424fc0fbb0fa756adda84905aacd:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGI2OTM0NGVmMjZhMjkyNTMwN2E3MzE1MDk3MzQ3NGEyYmFlNWNhNzQ4NDViYzAxMDAzMjU0Y2UzN2QxNTRiZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODBjMzdkNmY1MWY0ZDdhMWMwYTJmZDE2NjFmODYyYmE2N2Q5YjQ0M2YzY2FhOThlYjkzN2ZiOWM2OTNmMmRkOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZmY5OGRjZDMyNTA4NWM5YWE5ZjUyOGZlNDQwYjBhNDgyMjQ1ZmI5M2U4YjBjNWU1MmQ2MzEwN2U3YWVhOTUyZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzM2ZjZiODRkNDRkMDg1MGIzMTBjYzg3NDU0YjZkNDM0NDYyMzBiM2Y0NWM5NWMwNmJhMmNlNzE5MDM3NjdiMSJ9"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.7.0",
-    "at": "2026-10-04T19:25:22.935Z"
+    "at": "2026-10-04T19:28:41.541Z"
   }
 }
