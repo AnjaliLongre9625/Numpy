@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:6d55c50febbfd310dfa50a3f7ab0ee0fae60ce6e558f8e0f3cb910c408e4ffa0",
+  "claims": [
+    {
+      "id": "claim_179467d13ffb415bac9495e8ab0656c3",
+      "statement": "The numpy-financial library utilizes pytest as its primary testing framework, complemented by NumPy's testing utilities for numerical validation and the Hypothesis library for property-based testing.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/tests/test_financial.py",
+          "version": "repo-file-v1:sha256:2bb2313dec1b061ae5a7eb5ac2753985194b5a42fd7e783b574f8125d7baf1cc"
+        }
+      ]
+    },
+    {
+      "id": "claim_8b3803a7d8ba4f359cbc7bd0444adb88",
+      "statement": "Tests are organized within the numpy_financial/tests/ directory, separating standard unit tests from property-based testing strategies.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/tests/test_financial.py",
+          "version": "repo-file-v1:sha256:2bb2313dec1b061ae5a7eb5ac2753985194b5a42fd7e783b574f8125d7baf1cc"
+        }
+      ]
+    },
+    {
+      "id": "claim_7c55d5ec4a0343c1a7d11651f7e70da9",
+      "statement": "The testing suite specifically verifies financial function accuracy across varying payment periods (begin/end) and supports high-precision types like decimal.Decimal.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/tests/test_financial.py",
+          "version": "repo-file-v1:sha256:2bb2313dec1b061ae5a7eb5ac2753985194b5a42fd7e783b574f8125d7baf1cc"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.7.0",
+    "at": "2026-10-04T09:49:17.521Z"
+  }
+}
