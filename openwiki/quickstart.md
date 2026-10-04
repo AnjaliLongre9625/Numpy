@@ -3,9 +3,6 @@ type: concept
 title: Quickstart
 description: A starting guide for new contributors to navigate the repository, understand the architecture, and effectively use the financial functions library.
 tags: [introduction, navigation, architecture]
-verified:
-  - by: openwiki/0.7.0
-    at: 2026-10-04T09:49:17.521Z
 sources:
   - id: openwiki-source-29546a0fa3bd3395fbde36d1
     resource: repo://numpy_financial/_financial.py
