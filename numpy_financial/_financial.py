@@ -22,7 +22,7 @@ from numpy._typing import _NestedSequence  # pyright: ignore[reportPrivateImport
 from numpy_financial import _cfinancial
 
 __all__ = ['fv', 'pmt', 'nper', 'ipmt', 'ppmt', 'pv', 'rate',
-           'irr', 'npv', 'mirr','simple_interest',
+           'irr', 'npv', 'mirr','simple_interest','loan_pay',
            'NoRealSolutionError', 'IterationsExceededError']
 
 _ArrayT = TypeVar("_ArrayT", bound=npt.NDArray[Any])
