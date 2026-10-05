@@ -4,12 +4,14 @@ title: Financial Functions API
 description: Core reference for the mathematical and functional API of numpy-financial, covering cash flow, interest rate, and investment analysis.
 tags: [financial, numpy-financial, mathematics]
 sources:
+  - id: openwiki-source-4e5f802aed16234a2248d448
+    resource: repo://numpy_financial/_cfinancial.pyx
   - id: openwiki-source-29546a0fa3bd3395fbde36d1
     resource: repo://numpy_financial/_financial.py
 generated: { by: "openwiki/0.7.0", at: "2026-10-04T19:25:22.935Z" }
 verified:
   - by: openwiki/0.7.0
-    at: 2026-10-04T19:28:41.541Z
+    at: 2026-10-05T07:17:04.997Z
 ---
 
 The `numpy-financial` library (importable as `numpy_financial`) provides a collection of elementary financial functions designed as a standalone replacement for the deprecated financial routines previously included in NumPy.

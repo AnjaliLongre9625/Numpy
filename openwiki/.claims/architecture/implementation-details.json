@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:523f25a51e888a2d69cf3538e6b6a611d834b7ea42e76df51eae80b485ef5982",
+  "pageVersion": "sha256:acc5ae1951a78138a0b6a79192f3bfeaf1355909787529a9653914618b1dc798",
   "claims": [
     {
       "id": "claim_98bda85710c84d60ba891cb84d3ed16c",
@@ -8,7 +8,7 @@
       "evidence": [
         {
           "resource": "repo://numpy_financial/_financial.py",
-          "version": "repo-file-v1:sha256:090c6bc3d463abf1310ecbf73b55bef76201fe941e71ceee9e404900c6042684"
+          "version": "repo-file-v1:sha256:1934438379730b8c939c3bc581ec7de5af9b78cc6e8fb5d2761b15816f5bc2f7"
         }
       ]
     },
@@ -17,8 +17,8 @@
       "statement": "Financial functions act similarly to NumPy ufuncs by supporting broadcasting, allowing them to accept combinations of scalar and array-like inputs.",
       "evidence": [
         {
-          "resource": "repo://numpy_financial/_financial.py#L5-L9",
-          "version": "repo-lines-v1:sha256:45064d85cbdb93ef8ccdc294e39c09bcd44bcb43ed90922d1a6cacb160870f5d:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjhmNmFhMjg1Mjc5MTg3OTQ0MTY4NDBiZTc4OGVmNGQ4OWM3ZmE0ZjBhMWFlMTJjMTQyZWJmNTdmOTcxMmQwYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiODYwMTQ3OGZlZmJlZWZiMThmOTBjMzYxMWQ5MGU1MjlkNTA5MjdlZmIxYzEyYzVmMGRkOTAwOWM4NWY4NmE3MyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNTU0ODZmOTU1YzczMDhiNjk0Nzg3NWQ5NjkwZDQ3YzA4NzdjNDdhMTY3ZGVjNmE0MjA2NGRhMDNjMTRjY2IxMCJ9"
+          "resource": "repo://numpy_financial/_financial.py#L4-L8",
+          "version": "repo-lines-v1:sha256:00d2037685b6b6d7a1ba0fd4687d35e8e8f817605df13280bda065cb1247372f:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2ViNzAyNTc1OTNkYTA2ZjY4MmEzZGRkYTU0YTlkMjYwZDRmYzUxNGY2NDUyMzdmNWNhNzRiMDhmOGRhNjFhNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODBjMzdkNmY1MWY0ZDdhMWMwYTJmZDE2NjFmODYyYmE2N2Q5YjQ0M2YzY2FhOThlYjkzN2ZiOWM2OTNmMmRkOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTc1N2FlMWU0YjZiOGFhZDg3MGMyZGQ1MjcyNmIzNDgxMDZjNzQ4M2JkNDdhZGMwN2M4OTYxYjRjYTJhNTc3YSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzM2ZjZiODRkNDRkMDg1MGIzMTBjYzg3NDU0YjZkNDM0NDYyMzBiM2Y0NWM5NWMwNmJhMmNlNzE5MDM3NjdiMSJ9"
         }
       ]
     },
@@ -27,8 +27,8 @@
       "statement": "The package supports the decimal.Decimal type in its functions unless stated otherwise.",
       "evidence": [
         {
-          "resource": "repo://numpy_financial/_financial.py#L1-L15",
-          "version": "repo-lines-v1:sha256:9b191e5143e7d138c8059b402a3f8e852f0b73fac2e6bdde77d38c0be1bd9fc1:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZiODdjOWJjZDNkNGY2MTczYThkMGNhNDVjMTNkZGNkZDEyZjIxZTUwMWI4YjMwZDU2ZmEyNDVhMWJhNjdlMTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJkZDY3ZTU0Nzk3NTVkOGEyNmU5ODQwMGQ5MzE0MmRmODUzNTBhZWY5YmQxYmU4ZGVlM2QzYzBiNDJkNmI5ODkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE0YTJiY2Y4MTczMjc4NmQ0MmEzYTQ4N2RmY2I0NDNiNmY3MWNmYWRkOGQzMzZmM2MyYjBlMWY2YTE3ZTkwZGMifQ"
+          "resource": "repo://numpy_financial/_financial.py#L10-L12",
+          "version": "repo-lines-v1:sha256:858a62eadcd241111accf74a4b2618f0bdf40ee384ffd0eb1c7b4993073039b3:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiY2RlMDVjYTQyOGI3NGYyMDlhYmQ3ZTZjYTljMjEwOTMyZmVhMmJiYmRiNzIzMDIxMWNkZWNkYzIzNmQ1NGFmYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDc1ZDQ1ODllOTFjYzhjYjk3NDg4OWRhYjAxZGUxNWRiMTU3NGNhMTBlZWM3MjkwYTEwOWJmNTg4Yzk0ZTAxYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZTVjODc5YzBjN2JmODkwN2FkMGUwOGNiZmM0ZDg0ODY1NjMyOGJlZmFiNTQ5M2FlOGU5ZGFjODdhNzliNjlkOSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmM2YTM1MzIxMDVhNTk2NzkzNDZkYWU5OWNmNTkyYjljNjgwODIxZGRhOTM5NDkxNmRjNWYzNTMwNTc5YTMyMCJ9"
         }
       ]
     },
@@ -37,14 +37,18 @@
       "statement": "The _cfinancial.pyx module contains high-performance, C-level implementations of algorithms such as npv and nper, minimizing Python loop overhead by utilizing Cython's ability to compile to C and manage memory directly.",
       "evidence": [
         {
-          "resource": "repo://numpy_financial/_cfinancial.pyx",
-          "version": "repo-file-v1:sha256:68455e78b20dcedcb5beb980594a81fb218169a3fd45bdc3a4bd1855d5cccaf4"
+          "resource": "repo://numpy_financial/_cfinancial.pyx#L29-L50",
+          "version": "repo-lines-v1:sha256:5c2c77d1798843a72398b1dbef18eecade1f752462540d201f17dee4d65b8ccd:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVkNzlhNzY3NGE2MDliYWUyZDc1YjBlODc4YTFhMjNjNmE2M2ZiZGYzOTZhYzM5ODQ1NGQ2NzlhN2M0ZjU5NjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhYWE0ZjNkYWE2ZjYzZmIxYmQ3NTRlOGU1MjEzZjc4MWMyMmFiY2VhYjRlMGM5YzcyNjQwMjJlNjZkOWU1YjMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQxYWU2NTU0OWY2MTNkYWQ0NjMwYTRhZjgwYzFjYTYxNGE0MTJkNzAxNDljODVlZTlmY2IwNmYyZTdkNjYzNWIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImMyNzAwNWQwZjFlOWYzZjQ2NWE0NWQ2YmViMjFmYmU0YzJkYWE5ODc4NGM5MzYzMzcyNTlkYzQ1ODBjZTY4MjUifQ"
+        },
+        {
+          "resource": "repo://numpy_financial/_cfinancial.pyx#L5-L27",
+          "version": "repo-lines-v1:sha256:981336ec6b54e7077cbd723a0451df6e029638152ce45283a46231c6671b2a72:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlOTlhZmE1MGQ4NmU5ZmQyY2NjOTY1NTA0ZTAwNTNmYzRiMGFlODQxZTU3N2JiZmMwNDY2YTg5YzZjM2ViZmMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRhZTFlZWU5OTA1NGZjZWNlM2YyNzdkNDM4NmMxM2E1MWUyOGRhODY3MjEyMmU0MmU5N2IzOTAyMjM5OThiNTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjBmZjgxNmFmNjM5ZTBiYTAwNmY5ZGRkOWE0N2E5ZmI1ZDA0MDVkOWY2ZmNlNjNiMWRkZDZlNjVmMjMwYWI1OWYifQ"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.7.0",
-    "at": "2026-10-04T09:49:17.521Z"
+    "at": "2026-10-05T07:17:04.997Z"
   }
 }

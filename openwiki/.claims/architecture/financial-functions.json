@@ -1,14 +1,18 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:3d7f0a4ca25056f40262401b84ceac1cf0fe2412dd29ba2cb319d9421e1a8197",
+  "pageVersion": "sha256:f1ce886dbccbd8750287611eb1251f32e39c653cd9717af2f62a88abc4d7ec0f",
   "claims": [
     {
       "id": "claim_82dfbaaa09844bad9ee3fa2c3644deef",
-      "statement": "The numpy-financial library provides a core set of financial functions, including fv, pv, pmt, nper, rate, ipmt, ppmt, npv, irr, mirr, and simple_interest, patterned after standard spreadsheet financial formulas.",
+      "statement": "The numpy-financial library provides a core set of financial functions, including fv, pv, pmt, nper, rate, ipmt, ppmt, npv, irr, mirr, and simple_interest, which mirror common spreadsheet financial formulas and are implemented to support vectorized NumPy-style operations. While high-level logic and input handling reside in _financial.py, performance-critical loops are offloaded to the _cfinancial.pyx Cython extension.",
       "evidence": [
         {
+          "resource": "repo://numpy_financial/_cfinancial.pyx",
+          "version": "repo-file-v1:sha256:880ed320a3d5d1be880b65842e0543a0f5951bed28158558611101e989b4cad0"
+        },
+        {
           "resource": "repo://numpy_financial/_financial.py",
-          "version": "repo-file-v1:sha256:48f589db1cab37ecdc7d492fd51340c2808254bd841b037cd3c598817f7d8ab3"
+          "version": "repo-file-v1:sha256:1934438379730b8c939c3bc581ec7de5af9b78cc6e8fb5d2761b15816f5bc2f7"
         }
       ]
     },
@@ -51,6 +55,6 @@
   ],
   "verification": {
     "by": "openwiki/0.7.0",
-    "at": "2026-10-04T19:28:41.541Z"
+    "at": "2026-10-05T07:17:04.997Z"
   }
 }
