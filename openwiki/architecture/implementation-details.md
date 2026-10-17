@@ -9,9 +9,6 @@ sources:
   - id: openwiki-source-29546a0fa3bd3395fbde36d1
     resource: repo://numpy_financial/_financial.py
 generated: { by: "openwiki/0.7.0", at: "2026-10-05T07:17:04.997Z" }
-verified:
-  - by: openwiki/0.7.0
-    at: 2026-10-05T07:17:04.997Z
 ---
 
 ## Overview
