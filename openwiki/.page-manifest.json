@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "pages": {
     "/openwiki/architecture/financial-functions.md": {
-      "pageVersion": "sha256:f1ce886dbccbd8750287611eb1251f32e39c653cd9717af2f62a88abc4d7ec0f",
-      "completedBy": "openwiki/0.7.0",
-      "completedRunId": "96a96cfe-c1aa-45ab-b918-145b1deb7d51",
-      "gitHead": "fda867163a72556a3fe89f980758694415ad6251",
-      "sourceFingerprint": "sha256:3a5e44fb1a5eb4b6dd0cad83b94e77dd34fe8443d5f3263319e8ff1c7697d983"
+      "pageVersion": "sha256:b412dda832d264b0ccf19056b3879d61d040bdeab72ad063edff0f182947de94",
+      "completedBy": "openwiki/0.7.2",
+      "completedRunId": "0de374b0-2893-4427-a83a-9b4215355929",
+      "gitHead": "374c46facb2801eec2fc0a50ac3c1c63dcb20794",
+      "sourceFingerprint": "sha256:add713fa274b24a7aef8c0a1cfdd1701eee93f96529262357e3e51f6a65383cd"
     },
     "/openwiki/architecture/implementation-details.md": {
-      "pageVersion": "sha256:acc5ae1951a78138a0b6a79192f3bfeaf1355909787529a9653914618b1dc798",
-      "completedBy": "openwiki/0.7.0",
-      "completedRunId": "96a96cfe-c1aa-45ab-b918-145b1deb7d51",
-      "gitHead": "fda867163a72556a3fe89f980758694415ad6251",
-      "sourceFingerprint": "sha256:3a5e44fb1a5eb4b6dd0cad83b94e77dd34fe8443d5f3263319e8ff1c7697d983"
+      "pageVersion": "sha256:042c02e434e3c95b9e6a281e6bf149a46d2dec52b3f50b657d287bb7ef05ccdb",
+      "completedBy": "openwiki/0.7.2",
+      "completedRunId": "0de374b0-2893-4427-a83a-9b4215355929",
+      "gitHead": "374c46facb2801eec2fc0a50ac3c1c63dcb20794",
+      "sourceFingerprint": "sha256:add713fa274b24a7aef8c0a1cfdd1701eee93f96529262357e3e51f6a65383cd"
     },
     "/openwiki/quickstart.md": {
-      "gitHead": "8e39153786183d8d855e14386858c113035d8cbc",
-      "sourceFingerprint": "sha256:e9e508ee459d0880b317910c5454310b8eaefd3ac11be532d2fb0a3628f2545b",
-      "pageVersion": "sha256:1280637bdf979f4effe199e96546baed48d497341b5d15d68a48037ef650d016",
-      "completedBy": "openwiki/0.7.0",
-      "completedRunId": "57336617-196f-4fa4-88eb-5a938546f3bb"
+      "pageVersion": "sha256:898c99d65d51bbcf2e3ebeda1223a92d0f49f5bc15315c33ee26483014e04929",
+      "completedBy": "openwiki/0.7.2",
+      "completedRunId": "0de374b0-2893-4427-a83a-9b4215355929",
+      "gitHead": "374c46facb2801eec2fc0a50ac3c1c63dcb20794",
+      "sourceFingerprint": "sha256:add713fa274b24a7aef8c0a1cfdd1701eee93f96529262357e3e51f6a65383cd"
     },
     "/openwiki/testing/testing-strategy.md": {
-      "gitHead": "8e39153786183d8d855e14386858c113035d8cbc",
-      "sourceFingerprint": "sha256:e9e508ee459d0880b317910c5454310b8eaefd3ac11be532d2fb0a3628f2545b",
-      "pageVersion": "sha256:6d55c50febbfd310dfa50a3f7ab0ee0fae60ce6e558f8e0f3cb910c408e4ffa0",
-      "completedBy": "openwiki/0.7.0",
-      "completedRunId": "57336617-196f-4fa4-88eb-5a938546f3bb"
+      "pageVersion": "sha256:49b1e2e738f237aca4efd3fa2562bae3ea29f4614eb35405392db0998b92de1d",
+      "completedBy": "openwiki/0.7.2",
+      "completedRunId": "0de374b0-2893-4427-a83a-9b4215355929",
+      "gitHead": "374c46facb2801eec2fc0a50ac3c1c63dcb20794",
+      "sourceFingerprint": "sha256:add713fa274b24a7aef8c0a1cfdd1701eee93f96529262357e3e51f6a65383cd"
     }
   }
 }

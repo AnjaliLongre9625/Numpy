@@ -1,24 +1,28 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:1280637bdf979f4effe199e96546baed48d497341b5d15d68a48037ef650d016",
+  "pageVersion": "sha256:898c99d65d51bbcf2e3ebeda1223a92d0f49f5bc15315c33ee26483014e04929",
   "claims": [
     {
       "id": "claim_aba5e3289f03404e93ee198dfe954460",
-      "statement": "The library provides a collection of spreadsheet-style financial functions implemented to support NumPy broadcasting and both float and Decimal types.",
+      "statement": "The library provides a collection of spreadsheet-style financial functions implemented to support NumPy broadcasting and both float and Decimal types, with performance-critical parts delegated to _cfinancial.pyx.",
       "evidence": [
         {
+          "resource": "repo://numpy_financial/_cfinancial.pyx",
+          "version": "repo-file-v1:sha256:68455e78b20dcedcb5beb980594a81fb218169a3fd45bdc3a4bd1855d5cccaf4"
+        },
+        {
           "resource": "repo://numpy_financial/_financial.py",
-          "version": "repo-file-v1:sha256:090c6bc3d463abf1310ecbf73b55bef76201fe941e71ceee9e404900c6042684"
+          "version": "repo-file-v1:sha256:e8532e9f4961a12d5379c41007066eb07249c97ac3439812c07523e9facd2bae"
         }
       ]
     },
     {
       "id": "claim_790b749914ef434e90c4ec67959b5708",
-      "statement": "Public financial functions include fv, pmt, nper, ipmt, ppmt, pv, rate, irr, npv, and mirr, with dedicated exceptions for numerical errors.",
+      "statement": "Public financial functions include fv, pmt, nper, ipmt, ppmt, pv, rate, irr, npv, and mirr.",
       "evidence": [
         {
-          "resource": "repo://numpy_financial/_financial.py#L24-L26",
-          "version": "repo-lines-v1:sha256:550da9f430e332a6a0cc17bae6459e18bbba01e77846fb0ff2c98cf4130c8c79:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWIxMGMzOGYyODA4MWRjZmMzYTFhZDNkMTZhYWEyOWM5MWFhZGM3MzBlMTVjNWM0ZmFhYTE1NTcxZjJlODAwNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNGI2YjNmYzExNzJjNDUwZjZiMTNkNjJkZjdhZjI5NjYwZGJiMmNjZjk1ODhkOTQ4YjlkYjM4NDM3NzA5NjNkMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmE3OGYxNjljOThjNzFjODQzYzI5NDhjNGEyN2RlY2M5MGYxYzI5YzlmN2JmN2I5OTgwOWE2YTljMDRhZGY1YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTZjNTA3YWVmNjYzMWViZDZlYTA5Yjc1YWEyMTlhZTkwYzQ1NTYyNTg5NGRmMDYyODg5NmFiNzcyOWZjMDU4NiJ9"
+          "resource": "repo://numpy_financial/_financial.py",
+          "version": "repo-file-v1:sha256:e8532e9f4961a12d5379c41007066eb07249c97ac3439812c07523e9facd2bae"
         }
       ]
     },
@@ -34,7 +38,7 @@
     }
   ],
   "verification": {
-    "by": "openwiki/0.7.0",
-    "at": "2026-10-04T09:49:17.521Z"
+    "by": "openwiki/0.7.2",
+    "at": "2026-10-23T13:03:36.359Z"
   }
 }

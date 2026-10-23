@@ -4,48 +4,66 @@ title: Testing Strategy
 description: An overview of the testing infrastructure and methodologies used to verify financial function correctness in the numpy-financial repository.
 tags: [testing, quality assurance, financial]
 sources:
+  - id: openwiki-source-27ba340554ae08e122d851a0
+    resource: repo://numpy_financial/tests/strategies.py
   - id: openwiki-source-2c0fd432d4064fa2c8662e2a
     resource: repo://numpy_financial/tests/test_financial.py
-generated: { by: "openwiki/0.7.0", at: "2026-10-04T09:49:17.521Z" }
+generated: { by: "openwiki/0.7.2", at: "2026-10-23T13:03:36.359Z" }
+verified:
+  - by: openwiki/0.7.2
+    at: 2026-10-23T13:03:36.359Z
 ---
 
 # Testing Strategy
 
-The `numpy-financial` library employs a rigorous testing strategy to ensure the numerical accuracy and robustness of its financial functions. The testing suite focuses on verifying standard behavior, handling edge cases, and ensuring compatibility with various input types (such as `Decimal` objects and `numpy` arrays).
+The `numpy-financial` library maintains a robust testing strategy to ensure the numerical accuracy, reliability, and precision of its financial functions.
+
+## Testing Philosophy
+
+The library's testing philosophy is rooted in:
+* **Numerical Integrity**: Given the nature of financial calculations, precision and handling of edge cases are paramount. We prioritize rigorous numerical verification using established NumPy testing utilities.
+* **Property-Based Verification**: Instead of relying solely on manual test cases, we utilize property-based testing to explore wide input spaces, identifying potential failure modes in solvers (e.g., convergence issues in `rate` or `irr`) that might be missed by unit tests.
+* **Consistency**: Ensuring consistent behavior across different input types—including standard floating-point numbers, `numpy` arrays, and high-precision `decimal.Decimal` objects—is a core requirement for all new features and bug fixes.
 
 ## Test Organization
 
 All tests are located in the `numpy_financial/tests/` directory:
 
-* `numpy_financial/tests/test_financial.py`: Contains the primary unit and integration tests for financial functions.
-* `numpy_financial/tests/strategies.py`: Defines property-based testing strategies, typically utilizing `hypothesis` to generate diverse inputs.
+* `numpy_financial/tests/test_financial.py`: Contains the primary unit and integration tests covering the public API.
+* `numpy_financial/tests/strategies.py`: Defines property-based testing strategies, leveraging `hypothesis` to generate diverse and challenging input datasets.
 
 ## Framework and Tools
 
-The project leverages standard Python testing tools to maintain high code quality:
+The project relies on a standard Python testing stack:
 
-* **[pytest](https://docs.pytest.org/)**: The primary test runner and framework.
-* **[NumPy Testing Utilities](https://numpy.org/doc/stable/reference/routines.testing.html)**: Used for precise numerical comparisons, particularly `assert_allclose` for floating-point results and `assert_equal` for structural comparisons.
-* **[Hypothesis](https://hypothesis.readthedocs.io/)**: Employed for property-based testing to explore a wide range of input values beyond manual test cases, which is critical for uncovering edge cases in mathematical functions.
+* **[pytest](https://docs.pytest.org/)**: The primary test runner and orchestration framework.
+* **[NumPy Testing Utilities](https://numpy.org/doc/stable/reference/routines.testing.html)**: Used for precise numerical comparisons, particularly `assert_allclose` (floating-point precision) and `assert_equal` (structural integrity).
+* **[Hypothesis](https://hypothesis.readthedocs.io/)**: Used to perform property-based testing, which is essential for stress-testing numerical solvers against extreme values (e.g., near-zero interest rates, high-amplitude cash flows).
 
 ## Testing Objectives
 
 ### 1. Functional Correctness
-The test suite confirms that financial functions behave according to established standards. This includes checking:
-* Standard "begin" vs "end" payment period handling across functions like `rate`, `pv`, `pmt`, and `nper`.
-* Consistency across different input types, such as standard floating-point numbers and high-precision `decimal.Decimal` objects.
+The suite verifies that financial functions adhere to expected financial standards, including:
+* Consistent handling of "begin" versus "end" of period payment conventions across all solvers (e.g., `rate`, `pv`, `pmt`, `nper`).
+* Validating result accuracy across diverse scalar and vector inputs.
 
-### 2. Edge Cases and Robustness
-Property-based tests are used to stress the functions with:
-* Extreme values (very high/low interest rates, long durations).
-* Invalid or boundary-case input combinations that should produce specific errors or defined behaviors.
+### 2. Edge Cases for Numerical Solvers
+Solvers like `rate` and `irr` are susceptible to convergence failures or instability. Testing focuses on:
+* **Extreme Domain Inputs**: Testing very large or small interest rates and durations.
+* **Convergence Stability**: Ensuring the solvers degrade gracefully or raise appropriate exceptions when convergence criteria are not met.
+* **Type Handling**: Ensuring numerical functions behave identically when fed `decimal.Decimal` objects, often requiring custom assertion helpers (e.g., `assert_decimal_close`) to manage tolerance thresholds.
 
-### 3. Verification Utilities
-The repository provides custom assertion helpers, such as `assert_decimal_close`, which allow tests to verify results with a specified tolerance, ensuring that precision issues do not cause false test failures when working with non-float types.
+## Adding New Tests
+
+When contributing new features or bug fixes:
+1. **Locate the appropriate test file** in `numpy_financial/tests/`.
+2. **Add unit tests** to `test_financial.py` using `pytest` for specific scenarios.
+3. **Extend coverage** by adding new strategies or updating existing ones in `strategies.py` if the code involves complex numerical inputs or arrays.
+4. **Follow existing patterns** for assertions, particularly regarding precision tolerance.
 
 ## Running Tests
 
-Tests can be executed from the project root using the standard `pytest` command:
+Execute the full test suite from the repository root:
 
 ```bash
 pytest numpy_financial/tests/
