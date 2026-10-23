@@ -10,8 +10,8 @@ sources:
     resource: repo://numpy_financial/_financial.py
 generated: { by: "openwiki/0.7.0", at: "2026-10-05T07:17:04.997Z" }
 verified:
-  - by: openwiki/0.7.0
-    at: 2026-10-05T07:17:04.997Z
+  - by: openwiki/0.7.2
+    at: 2026-10-23T13:03:36.359Z
 ---
 
 ## Overview

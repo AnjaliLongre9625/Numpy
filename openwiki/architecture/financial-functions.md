@@ -3,18 +3,18 @@ type: concept
 title: Financial Functions API
 description: Core reference for the mathematical and functional API of numpy-financial, covering cash flow, interest rate, and investment analysis.
 tags: [financial, numpy-financial, mathematics]
+verified:
+  - by: openwiki/0.7.2
+    at: 2026-10-23T13:03:36.359Z
 sources:
   - id: openwiki-source-4e5f802aed16234a2248d448
     resource: repo://numpy_financial/_cfinancial.pyx
   - id: openwiki-source-29546a0fa3bd3395fbde36d1
     resource: repo://numpy_financial/_financial.py
-generated: { by: "openwiki/0.7.0", at: "2026-10-04T19:25:22.935Z" }
-verified:
-  - by: openwiki/0.7.0
-    at: 2026-10-05T07:17:04.997Z
+generated: { by: "openwiki/0.7.2", at: "2026-10-23T13:03:36.359Z" }
 ---
 
-The `numpy-financial` library (importable as `numpy_financial`) provides a collection of elementary financial functions designed as a standalone replacement for the deprecated financial routines previously included in NumPy.
+The `numpy-financial` library (`numpy_financial`) provides a collection of elementary financial functions designed as a standalone replacement for the deprecated financial routines previously included in NumPy.
 
 ## Design Philosophy
 
@@ -31,7 +31,7 @@ graph TD
 
 ## Core Financial Functions
 
-The library exports the following primary financial functions, categorized by their domain:
+The library exports primary financial functions, categorized by their domain:
 
 ### Time Value of Money (TVM)
 These functions relate present values, future values, and periodic payments over a series of periods:
@@ -59,10 +59,13 @@ These functions evaluate the profitability or return of irregular cash flow seri
 
 *   **Input Types**: The functions support scalars, NumPy arrays, and `decimal.Decimal` objects, enabling high-precision and vectorized calculations.
 *   **Vectorization and Broadcasting**: Functions leverage NumPy's broadcasting rules. When input parameters have compatible shapes, the library automatically expands them, allowing for efficient combinations of scalars and multi-dimensional arrays. Many core computations are delegated to internal C-extensions (e.g., `_cfinancial`) for performance.
-*   **`when` argument**: Payments are generally defined by a `when` parameter (where `'end'`=0, `'begin'`=1). The functions handle various representations (strings, integers, or sequences) via internal normalization.
+*   **Normalization**: Before calling the C-extension, high-level functions in `_financial.py` normalize inputs (e.g., via `np.atleast_1d` and `astype(np.float64)`) to ensure consistency and shape compatibility.
+*   **`when` argument**: Payments are generally defined by a `when` parameter (where `'end'`=0, `'begin'`=1). The functions handle various representations (strings, integers, or sequences) via internal conversion logic.
 
 ## Invariants and Failure Semantics
 
-*   **Iteration Limits**: Functions that solve for roots (like `rate` or `irr`) rely on numerical methods and may fail if convergence is not reached within `maxiter` iterations, raising `IterationsExceededError` or returning `NaN`.
+The library implements formal error handling using custom exceptions:
+
+*   **Iteration Limits**: Functions that solve for roots (like `rate` or `irr`) rely on numerical methods and may fail if convergence is not reached within `maxiter` iterations, raising `IterationsExceededError`.
 *   **No Solution**: In cases where no real solution exists for the requested financial calculation, the library may raise `NoRealSolutionError`.
 *   **Array Handling**: The functions follow standard ufunc-like conventions: if all inputs are scalar, the output is scalar; if any input is an array, the output is an array of the broadcasted shape.

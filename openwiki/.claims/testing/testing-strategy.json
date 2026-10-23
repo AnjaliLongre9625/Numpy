@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:6d55c50febbfd310dfa50a3f7ab0ee0fae60ce6e558f8e0f3cb910c408e4ffa0",
+  "pageVersion": "sha256:49b1e2e738f237aca4efd3fa2562bae3ea29f4614eb35405392db0998b92de1d",
   "claims": [
     {
       "id": "claim_179467d13ffb415bac9495e8ab0656c3",
@@ -31,10 +31,40 @@
           "version": "repo-file-v1:sha256:2bb2313dec1b061ae5a7eb5ac2753985194b5a42fd7e783b574f8125d7baf1cc"
         }
       ]
+    },
+    {
+      "id": "claim_6775ff3fbda04df3991e8fd1f7a8b1d4",
+      "statement": "The library uses pytest, NumPy testing utilities (assert_allclose, assert_equal), and Hypothesis for property-based testing to ensure numerical accuracy and structural integrity.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/tests/test_financial.py",
+          "version": "repo-file-v1:sha256:2bb2313dec1b061ae5a7eb5ac2753985194b5a42fd7e783b574f8125d7baf1cc"
+        }
+      ]
+    },
+    {
+      "id": "claim_4c685d231e4f450c8fa7c2985eb83b59",
+      "statement": "The project organizes tests into a functional unit test suite (test_financial.py) and a property-based input generation suite (strategies.py).",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/tests/strategies.py",
+          "version": "repo-file-v1:sha256:3fdb4867a0baffc1b9014ae488f718cf99e8b5edca0c74c087d9d298d94b55fa"
+        }
+      ]
+    },
+    {
+      "id": "claim_def66ed6ca994920a902a943d64d7b25",
+      "statement": "Custom assertion helpers like assert_decimal_close are used to verify numerical results when using non-float types such as decimal.Decimal, managing precision tolerances.",
+      "evidence": [
+        {
+          "resource": "repo://numpy_financial/tests/test_financial.py#L26-L34",
+          "version": "repo-lines-v1:sha256:57ebed6e6aadcd3e203f852a621d9e908d3d88221d610f18a9ad41c54fd6bcdb:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjI5ZTUxN2Q4NGM1NzVhMjYzOGVmMDBhMWQyYzg0YjY5MTZlNDY0NmUwOTE5ZjhlNWEzZGU1ODFhMTJiNzRjMiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTk4YjA2M2Q5YjQ3ZTY1Mzc5NjI1NTcyY2NlMTk3NjY5ZDU3NjdlMTJjMThiZTA3NTY1MmI4Y2Q5ODFjZThkNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNzYzMDViMzViMDIwZGE4NDRlMjY3ZjI3YTZiODViODQ3ZGU5MTk3YzU3Y2E2YmViNGRlODE5ZDMxYzExNDE1ZiJ9"
+        }
+      ]
     }
   ],
   "verification": {
-    "by": "openwiki/0.7.0",
-    "at": "2026-10-04T09:49:17.521Z"
+    "by": "openwiki/0.7.2",
+    "at": "2026-10-23T13:03:36.359Z"
   }
 }
