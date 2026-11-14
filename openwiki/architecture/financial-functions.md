@@ -10,8 +10,8 @@ sources:
     resource: repo://numpy_financial/_financial.py
 generated: { by: "openwiki/0.7.0", at: "2026-10-04T19:25:22.935Z" }
 verified:
-  - by: openwiki/0.7.0
-    at: 2026-10-05T07:17:04.997Z
+  - by: openwiki/0.9.0
+    at: 2026-11-14T14:44:30.845Z
 ---
 
 The `numpy-financial` library (importable as `numpy_financial`) provides a collection of elementary financial functions designed as a standalone replacement for the deprecated financial routines previously included in NumPy.
